@@ -61,7 +61,7 @@ public class PriceController {
         }
     }
 
-    @RequestMapping("/api/health")
+    @GetMapping("/api/health")
     public ResponseEntity<String> health() {
         return ResponseEntity.ok("Pricing service is running");
     }
